@@ -9,11 +9,13 @@
 
     <UserControl.Resources>
         <Style TargetType="Button">
-            <Setter Property="FontSize" Value="20"/>
-            <Setter Property="Margin" Value="0,0,0,10" />
+            <Setter Property="FontSize" Value="22"/>
+            <Setter Property="Width" Value="200"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Margin" Value="0,0,0,10"/>
         </Style>
     </UserControl.Resources>
-    
+
     <StackPanel Width="300" HorizontalAlignment="Center" VerticalAlignment="Center">
         <Button Command="{Binding VsPlayerCommand}" Content="Zwei Spieler"/>
         <Button Command="{Binding VsComputerCommand}" Content="Ein Spieler"/>

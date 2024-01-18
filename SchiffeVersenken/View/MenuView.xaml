@@ -5,13 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SchiffeVersenken"
         mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <Style TargetType="Button">
+            <Setter Property="FontSize" Value="22"/>
+            <Setter Property="Width" Value="200"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Margin" Value="0,0,0,10"/>
+        </Style>
+    </UserControl.Resources>
+    
     <StackPanel Width="300" HorizontalAlignment="Center" VerticalAlignment="Center">
         <Button Command="{Binding PlayCommand}"
-                FontSize="20"
-                Content="Spielen"
-                Margin="0,0,0,10"/>
+                Content="Spielen"/>
         <Button Command="{Binding QuitCommand}"
-                FontSize="20"
                 Content="Spiel Verlassen"/>
 
     </StackPanel>

@@ -12,9 +12,6 @@ namespace SchiffeVersenken
 
         public string Name {  get; set; }
 
-        [ObservableProperty]
-        public bool isPlayersTurn = false;
-
         public Player(string name)
         {
             Name = name;
